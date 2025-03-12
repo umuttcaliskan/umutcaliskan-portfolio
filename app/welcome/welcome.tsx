@@ -19,10 +19,10 @@ export function Welcome() {
   };
 
   return (
-    <main className={`min-h-screen ${theme === 'dark' ? 'bg-[#0F172A] text-white' : 'bg-gray-50 text-gray-900'} transition-colors duration-300`}>
+    <main className={`min-h-screen overflow-x-hidden ${theme === 'dark' ? 'bg-[#0F172A] text-white' : 'bg-gray-50 text-gray-900'} transition-colors duration-300`}>
       <div className="container mx-auto px-4 py-16 max-w-5xl">
         {/* Tema değiştirme butonu */}
-        <div className="fixed top-4 left-4 z-50">
+        <div className="fixed top-4 right-4 z-50">
           <button 
             onClick={toggleTheme} 
             className={`p-2 md:p-3 rounded-full backdrop-blur-md shadow-lg transition-all duration-300 ${
