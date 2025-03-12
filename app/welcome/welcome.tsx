@@ -101,34 +101,103 @@ developing efficient solutions with modern software architectures.
         {/* Projeler bileşeni */}
         <Projects theme={theme} />
 
-
         {/* İletişim bölümü */}
-        <h2 className={`text-3xl md:text-4xl font-bold mb-8 pb-4 border-b ${theme === 'dark' ? 'border-gray-700' : 'border-gray-200'}`}>
-          İletişim
-        </h2>
-        <div className={`flex flex-col gap-4 text-lg ${theme === 'dark' ? 'text-gray-300' : 'text-gray-600'}`}>
-          <a 
-            href="mailto:umutcaliskann37@gmail.com" 
-            className={`flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-300 backdrop-blur-md ${
-              theme === 'dark'
-                ? 'bg-gray-800/50 hover:bg-gray-700/50'
-                : 'bg-white/50 hover:bg-gray-100/50'
-            } shadow-lg hover:shadow-xl transform hover:-translate-y-1`}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            <span>umutcaliskann37@gmail.com</span>
-          </a>
-          <div className={`flex items-center gap-3 px-6 py-4 rounded-xl backdrop-blur-md ${
-            theme === 'dark'
-              ? 'bg-gray-800/50'
-              : 'bg-white/50'
-          } shadow-lg`}>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-            </svg>
-            <span>+90 535 369 86 89</span>
+        <div className="relative">
+          <div className={`absolute inset-0 blur-3xl opacity-30 ${theme === 'dark' ? 'bg-blue-600' : 'bg-blue-400'} rounded-full transform translate-x-1/2 -translate-y-1/2`} />
+          <div className={`relative rounded-2xl overflow-hidden backdrop-blur-md shadow-xl ${theme === 'dark' ? 'bg-gray-800/50' : 'bg-white/50'} p-8 md:p-12`}>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
+              İletişim
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* İletişim Bilgileri */}
+              <div className="space-y-6">
+                <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
+                  İletişim Bilgileri
+                </h3>
+                <div className="space-y-4">
+                  <a 
+                    href="mailto:umutcaliskann37@gmail.com" 
+                    className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 ${
+                      theme === 'dark'
+                        ? 'bg-gray-700/50 hover:bg-gray-600/50'
+                        : 'bg-gray-100/50 hover:bg-gray-200/50'
+                    } group`}
+                  >
+                    <div className={`p-3 rounded-lg ${
+                      theme === 'dark' 
+                        ? 'bg-blue-500/20 text-blue-400 group-hover:bg-blue-500/30' 
+                        : 'bg-blue-100 text-blue-600 group-hover:bg-blue-200'
+                    } transition-colors duration-300`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>E-posta</div>
+                      <div className={`font-medium ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
+                        umutcaliskann37@gmail.com
+                      </div>
+                    </div>
+                  </a>
+
+                  <div className={`flex items-center gap-4 p-4 rounded-xl ${
+                    theme === 'dark'
+                      ? 'bg-gray-700/50'
+                      : 'bg-gray-100/50'
+                  }`}>
+                    <div className={`p-3 rounded-lg ${
+                      theme === 'dark' 
+                        ? 'bg-green-500/20 text-green-400' 
+                        : 'bg-green-100 text-green-600'
+                    }`}>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <div className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>Telefon</div>
+                      <div className={`font-medium ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
+                        +90 535 369 86 89
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Sosyal Medya */}
+              <div className="space-y-6">
+                <h3 className={`text-xl font-semibold ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
+                  Sosyal Medya
+                </h3>
+                <div className="grid grid-cols-2 gap-4">
+                  {socialLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`flex items-center gap-3 p-4 rounded-xl transition-all duration-300 ${
+                        theme === 'dark'
+                          ? 'bg-gray-700/50 hover:bg-gray-600/50'
+                          : 'bg-gray-100/50 hover:bg-gray-200/50'
+                      } group`}
+                    >
+                      <div className={`p-2 rounded-lg ${
+                        theme === 'dark' 
+                          ? 'bg-gray-600/50 text-gray-300 group-hover:bg-gray-500/50' 
+                          : 'bg-gray-200/50 text-gray-600 group-hover:bg-gray-300/50'
+                      } transition-colors duration-300`}>
+                        {link.icon}
+                      </div>
+                      <span className={`font-medium ${theme === 'dark' ? 'text-gray-200' : 'text-gray-700'}`}>
+                        {link.name}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
