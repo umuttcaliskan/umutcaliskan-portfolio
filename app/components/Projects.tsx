@@ -5,6 +5,8 @@ interface Project {
   name: string;
   href: string;
   githubUrl: string;
+  apkUrl?: string;
+  extensionUrl?: string;
   description: string;
   screenshot?: string;
   technologies: string[];
@@ -134,6 +136,40 @@ export function Projects({ theme }: ProjectsProps) {
                       <span>GitHub</span>
                     </a>
                   )}
+                  {website.apkUrl && (
+                    <a
+                      href={website.apkUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`z-10 relative flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm transition-all duration-300 ${
+                        theme === 'dark'
+                          ? 'bg-green-600 hover:bg-green-700'
+                          : 'bg-green-500 hover:bg-green-600'
+                      } text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5`}
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                      </svg>
+                      <span>APK İndir</span>
+                    </a>
+                  )}
+                  {website.extensionUrl && (
+                    <a
+                      href={website.extensionUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`z-10 relative flex items-center gap-1.5 px-4 py-1.5 rounded-lg text-sm transition-all duration-300 ${
+                        theme === 'dark'
+                          ? 'bg-purple-600 hover:bg-purple-700'
+                          : 'bg-purple-500 hover:bg-purple-600'
+                      } text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5`}
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
+                      </svg>
+                      <span>Uzantıyı İndir</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
@@ -218,6 +254,7 @@ const websites = [
     name: "QR-Gen | QR Code Generator",
     href: "https://umutcaliskan.com",
     githubUrl: "https://github.com/umuttcaliskan/QR-Gen",
+    apkUrl: "/apk/QR-Gen.apk",
     description: "QR kod oluşturma, özelleştirme ve yönetme imkanı sunan kapsamlı bir mobil uygulama.",
     screenshot: "/qr-gen.png",
     technologies: ["React Native & Expo", "Nativewind", "TypeScript"],
@@ -232,6 +269,7 @@ const websites = [
     name: "Cv-Gen | CV Generator",
     href: "https://portfolio.umutcaliskan.com",
     githubUrl: "https://github.com/umuttcaliskan/CvGen.git",
+    apkUrl: "/apk/CvGen.apk",
     description: "Profesyonel özgeçmiş oluşturmanızı sağlayan, özelleştirilebilir şablonlar sunan mobil uygulama.",
     screenshot: "/cv-gen-mobil.png",
     technologies: ["React Native & Expo", "NativeWind", "Firebase", "TypeScript", "AsyncStorage", "Context API" ],
@@ -260,6 +298,7 @@ const websites = [
     name: "Calculation Center",
     href: "https://cvgen.app",
     githubUrl: "https://github.com/umuttcaliskan/HesapMerkezim.git",
+    extensionUrl: "/apk/dist.crx",
     description: "Günlük finansal işlemlerinizi takip edebileceğiniz, gelir-gider analizi yapabileceğiniz Chrome uzantısı.",
     screenshot: "/hesap-merkezim.png",
     technologies: ["React.js", "Webpack", "TailwindCSS", "Axios" , "TypeScript", "Chart.js"],
