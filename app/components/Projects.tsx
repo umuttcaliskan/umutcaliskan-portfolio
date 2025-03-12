@@ -219,7 +219,7 @@ const websites = [
     href: "https://umutcaliskan.com",
     githubUrl: "https://github.com/umuttcaliskan/QR-Gen",
     description: "QR kod oluşturma, özelleştirme ve yönetme imkanı sunan kapsamlı bir mobil uygulama.",
-    screenshot: "/blog-screenshot.jpg",
+    screenshot: "/qr-gen.png",
     technologies: ["React Native & Expo", "Nativewind", "TypeScript"],
     type: "Mobile Application",
     icon: (
@@ -233,7 +233,7 @@ const websites = [
     href: "https://portfolio.umutcaliskan.com",
     githubUrl: "https://github.com/umuttcaliskan/CvGen.git",
     description: "Profesyonel özgeçmiş oluşturmanızı sağlayan, özelleştirilebilir şablonlar sunan mobil uygulama.",
-    screenshot: "/portfolio-screenshot.jpg",
+    screenshot: "/cv-gen-mobil.png",
     technologies: ["React Native & Expo", "NativeWind", "Firebase", "TypeScript", "AsyncStorage", "Context API" ],
     type: "Mobile Application",
     icon: (
@@ -247,7 +247,7 @@ const websites = [
     href: "https://cvgen.com.tr",
     githubUrl: "https://github.com/umuttcaliskan/CvGen-Web.git",
     description: "CV-Gen mobil uygulamasının web versiyonu. Profesyonel özgeçmişler oluşturmak için kullanıcı dostu bir web arayüzü.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/cvgen-web.png",
     technologies: ["Next.js", "Firebase", "TailwindCSS", "cPanel" , "TypeScript", "Context API"],
     type: "Website",
     icon: (
@@ -261,7 +261,7 @@ const websites = [
     href: "https://cvgen.app",
     githubUrl: "https://github.com/umuttcaliskan/HesapMerkezim.git",
     description: "Günlük finansal işlemlerinizi takip edebileceğiniz, gelir-gider analizi yapabileceğiniz Chrome uzantısı.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/hesap-merkezim.png",
     technologies: ["React.js", "Webpack", "TailwindCSS", "Axios" , "TypeScript", "Chart.js"],
     type: "Google Chrome Extension",
     icon: (
@@ -272,12 +272,12 @@ const websites = [
   },
   {
     name: "My Portfolio",
-    href: "https://cvgen.app",
+    href: "https://umutcaliskan.info",
     githubUrl: "https://github.com/umuttcaliskan/HesapMerkezim.git",
     description: "Kişisel portfolyo websitem. Projelerimi, yeteneklerimi ve deneyimlerimi sergilediğim modern bir web uygulaması.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/portfolio.png",
     technologies: ["React.js", "Webpack", "TailwindCSS", "Axios" , "TypeScript", "Chart.js"],
-    type: "Google Chrome Extension",
+    type: "Website",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
@@ -289,9 +289,9 @@ const websites = [
     href: "https://msgdijital.com",
     githubUrl: "",
     description: "Dijital pazarlama ajansı için geliştirilen modern ve responsive kurumsal websitesi.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/msg.png",
     technologies: ["React.js", "Webpack", "TailwindCSS", "Axios" , "TypeScript", "Chart.js"],
-    type: "Google Chrome Extension",
+    type: "Website",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -303,9 +303,9 @@ const websites = [
     href: "https://ecfhediyelik.com",
     githubUrl: "",
     description: "Hediyelik eşya satışı yapan e-ticaret sitesi. Opencart altyapısı ile özelleştirilmiş temaya sahip.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/ecf.png",
     technologies: ["Opencart", "PHP", "MySQL", "OpenCart Extensions" , "Twig", "cPanel"],
-    type: "Google Chrome Extension",
+    type: "Website",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
@@ -317,7 +317,7 @@ const websites = [
     href: "https://libasotokurtarma.com",
     githubUrl: "",
     description: "Oto kurtarma firması için geliştirilen kurumsal websitesi. 7/24 çekici hizmeti rezervasyonu yapılabilen modern bir arayüz.",
-    screenshot: "/cvgen-screenshot.jpg",
+    screenshot: "/libas.png",
     technologies: ["Opencart", "PHP", "MySQL", "OpenCart Extensions" , "Twig", "cPanel"],
     type: "Website",
     icon: (
