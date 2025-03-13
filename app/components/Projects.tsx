@@ -258,7 +258,7 @@ export function Projects({ theme }: ProjectsProps) {
 const websites = [
   {
     name: "QR-Gen | QR Code Generator",
-    href: "https://umutcaliskan.com",
+    href: "",
     githubUrl: "https://github.com/umuttcaliskan/QR-Gen",
     apkUrl: "/apk/QR-Gen.apk",
     description: "A comprehensive mobile application that allows users to create, customize, and manage QR codes.",
@@ -273,7 +273,7 @@ const websites = [
   },
   {
     name: "Cv-Gen | CV Generator",
-    href: "https://portfolio.umutcaliskan.com",
+    href: "https://cvgen.com.tr",
     githubUrl: "https://github.com/umuttcaliskan/CvGen.git",
     apkUrl: "/apk/CvGen.apk",
     description: "A mobile application that enables you to create a professional resume and offers customizable templates.",
@@ -302,7 +302,7 @@ const websites = [
   },
   {
     name: "Calculation Center",
-    href: "https://cvgen.app",
+    href: "",
     githubUrl: "https://github.com/umuttcaliskan/HesapMerkezim.git",
     extensionUrl: "/apk/dist.crx",
     description: "A practical Google Chrome extension that provides quick and easy access to daily calculations!",
