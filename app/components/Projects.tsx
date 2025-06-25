@@ -333,7 +333,7 @@ const websites = [
     name: "Mulky",
     href: "https://mulky.com.tr",
     githubUrl: "",
-    description: "A comprehensive property, tenant, site, and hotel management platform I developed during my time at Finis Software, offering efficient solutions for real estate and hospitality operations.",
+    description: "A property, tenant, site, and hotel management platform I developed at Finis Software.",
     screenshot: "/mulky.png",
     technologies: ["Django", "React Native & Expo", "Nativewind", "TypeScript"],
     type: "Website and Mobile",
