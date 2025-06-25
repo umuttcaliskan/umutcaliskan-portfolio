@@ -330,6 +330,48 @@ const websites = [
     )
   },
   {
+    name: "Mulky",
+    href: "https://mulky.com.tr",
+    githubUrl: "",
+    description: "My personal portfolio website showcasing my projects, skills, and experience.",
+    screenshot: "/mulky.png",
+    technologies: ["Django", "React Native & Expo", "Nativewind", "TypeScript"],
+    type: "Websit and Mobile",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    )
+  },
+  {
+    name: "Emre Gürsoy Life",
+    href: "https://emregursoy.life",
+    githubUrl: "",
+    description: "Professional coaching services for personal and professional development.",
+    screenshot: "/emregursoy.png",
+    technologies: ["Wordpress", "cPanel"],
+    type: "Website",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    )
+  },
+  {
+    name: "The Title Agency",
+    href: "https://thetitleajans.com",
+    githubUrl: "",
+    description: "A creative agency website I developed at Dashy, providing professional digital solutions and branding services.",
+    screenshot: "/thetitleajans.png",
+    technologies: ["Wordpress", "cPanel"],
+    type: "Website",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+      </svg>
+    )
+  },
+  {
     name: "ECF Gift Store",
     href: "https://ecfhediyelik.com",
     githubUrl: "",
@@ -356,5 +398,6 @@ const websites = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
       </svg>
     )
-  }
+  },
+  
 ]; 
