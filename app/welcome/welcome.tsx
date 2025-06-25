@@ -67,13 +67,12 @@ export function Welcome() {
                   Full-Stack Developer
                 </p>
                 <p className={`max-w-2xl text-lg ${theme === 'dark' ? 'text-gray-400' : 'text-gray-500'}`}>
-                I am a developer specializing in React Native and React.js, focused on building scalable and high-
-performance mobile and web applications. I have experience managing real-time data flows using RESTful
-APIs, WebSocket, TypeScript, and Firebase integrations. Additionally, I have strong expertise in MSSQL and
-database optimizations. My goal is to create secure, user-friendly, and high-performance applications that
-deliver the best user experience. I enjoy learning new technologies, solving complex problems, and
-developing efficient solutions with modern software architectures.
-                </p>
+                I am a Full-Stack Developer with hands-on experience in building cross-platform mobile and web applications using React Native, Next.js, TypeScript, and Django. My focus is on creating scalable, high-performance applications with clean architecture and intuitive user interfaces.
+                
+                I've developed and published production-ready apps like CvGen and QR-Gen, integrated Firebase, RESTful APIs, and WebSocket for real-time data handling, and built admin panels for dynamic content management.
+                
+                With a background in both Computer Engineering and Mechatronics, I bring a problem-solving mindset to software development. I enjoy learning new technologies, optimizing systems for performance and security, and delivering modern digital solutions that create real impact.
+               </p>
               </div>
             </div>
           </div>
@@ -81,6 +80,25 @@ developing efficient solutions with modern software architectures.
 
         {/* Sosyal medya linkleri */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-20">
+          {/* CV'yi Görüntüle butonu sosyal medya linklerinin en solunda */}
+          <a
+            href="/Umut_Caliskan_FullStack_Developer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`flex items-center gap-3 px-4 py-2 rounded-xl border-2 font-bold text-base md:text-lg shadow-xl scale-105 transition-transform duration-300
+              ${theme === 'dark'
+                ? 'bg-gradient-to-r from-blue-600 to-cyan-500 text-white border-blue-400 animate-pulse hover:animate-none hover:scale-110'
+                : 'bg-gradient-to-r from-blue-400 to-cyan-300 text-white border-blue-300 animate-pulse hover:animate-none hover:scale-110'
+              }`
+            }
+            aria-label="CV Görüntüle"
+          >
+            <svg className="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M1.5 12s4-7 10.5-7 10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z" />
+              <circle cx="12" cy="12" r="3" />
+            </svg>
+            <span className="text-base md:text-lg font-bold">CV Görüntüle</span>
+          </a>
           {socialLinks.map((link) => (
             <a
               key={link.name}
